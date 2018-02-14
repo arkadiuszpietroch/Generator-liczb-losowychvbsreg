@@ -1,0 +1,20 @@
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x,y;
+  srand((unsigned int)time(NULL));
+  cout << "Podaj maksymalny przedzial : ";
+  cin>>x;
+  cout << "Podaj minimalny przedzial : ";
+  cin>>y;
+   x = rand() % (x - y+1) + y;
+  cout << "Wylosowalem: " << x << endl;
+
+  system("PAUSE");
+  return 0;
+}
